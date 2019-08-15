@@ -50,9 +50,16 @@ public class Lesson1 {
         System.out.print("nhập vào số p= ");
         float p = sc.nextFloat();
         if (m == 0) {
+            if (n==0) {
+                if (p==0){ 
+                      System.out.print (" Phuong rinh co vo so nghiem");
+                        }
+                 
+            }
+            else{ 
             float nghiem = -p / n;
             System.out.println("Nghiệm của phương trình là :");
-            System.out.print(nghiem);
+            System.out.print(nghiem);}
         } else {
             float h = n * n - p * 4 * m;
             if (h < 0) {

@@ -32,7 +32,7 @@ public class VIppro {
        
         for (  i = 0;i  < n;i++){
             if (i%2==0) {
-                B[b]=A[i];
+                  B[b]=A[i];
                 b++;
             }
         }
