@@ -54,6 +54,7 @@ public class Lesson1 {
                 if (p==0){ 
                       System.out.print (" Phuong rinh co vo so nghiem");
                         }
+                else {System.out.print("Phuong trinh vo nghiem");}
                  
             }
             else{ 
