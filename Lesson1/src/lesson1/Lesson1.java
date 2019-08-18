@@ -50,21 +50,22 @@ public class Lesson1 {
         System.out.print("nhập vào số p= ");
         float p = sc.nextFloat();
         if (m == 0) {
-            if (n==0) {
-                if (p==0){ 
-                      System.out.print (" Phuong rinh co vo so nghiem");
-                        }
-                else {System.out.print("Phuong trinh vo nghiem");}
-                 
+            if (n == 0) {
+                if (p == 0) {
+                    System.out.print(" Phuong rinh co vo so nghiem");
+                } else {
+                    System.out.print("Phuong trinh vo nghiem");
+                }
+
+            } else {
+                float nghiem = -p / n;
+                System.out.println("Nghiệm của phương trình là :");
+                System.out.print(nghiem);
             }
-            else{ 
-            float nghiem = -p / n;
-            System.out.println("Nghiệm của phương trình là :");
-            System.out.print(nghiem);}
         } else {
             float h = n * n - p * 4 * m;
             if (h < 0) {
-                System.out.print("Phuong trinh vo nghiem");
+                System.out.println("Phuong trinh vo nghiem");
             } else {
                 float k = (float) Math.sqrt(h);
 
@@ -79,5 +80,28 @@ public class Lesson1 {
             }
 
         }
+        /// bai3
+        System.out.print("Nhập vào số x=");
+        int x = sc.nextInt();
+        if (x<3) {
+            System.out.print("khong co so ng to nao truoc no");
+        }
+        for (int i = 2; i < x + 1; i++) {
+
+            boolean songto = false;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    songto = true;
+                    break;
+                }
+
+              
+            }
+            if (!songto) {
+                    System.out.print(i +"    ");
+                }
+        }
+          
+
     }
 }
