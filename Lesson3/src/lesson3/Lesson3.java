@@ -41,7 +41,7 @@ public class Lesson3 {
                 System.out.print(a[i] + "  ");
             }
         }
-        System.out.println("Cac phan tu o vi tri le :");
+        System.out.println("Cac phan tu o vi tri le la :");
         for (i = 0; i < dodai; i++) {
             if (i % 2 != 0) {
                 System.out.print(a[i] + "  ");
