@@ -94,14 +94,14 @@ public class Lesson1 {
                     songto = true;
                     break;
                 }
-
-              
             }
             if (!songto) {
-                    System.out.print(i +"    ");
+                    System.out.print(+i +"    ");
+                  
                 }
-        }
-          
+         }
 
+      
+     
     }
 }
