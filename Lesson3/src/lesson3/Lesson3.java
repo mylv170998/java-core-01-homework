@@ -51,23 +51,30 @@ public class Lesson3 {
         System.out.println("Cac phan tu chia het cho 2 la:");
         for (i = 0; i < dodai; i++) {
             if (a[i] % 2 == 0) {
-                System.out.println(a[i] + "  ");
+                System.out.print(a[i] + "  ");
             }
         }
-        int tongchan=0;
-        for (i=0;i<1;i++){
-            if (a[i]%2==0){
-                tong=tong+a[i];
+        int tongchan = 0;
+        for (i = 0; i < dodai; i++) {
+            if (a[i] % 2 == 0) {
+                tongchan = tongchan + a[i];
             }
-        System.out.println("Tong cac phan tu chan la:" + tongchan);
         }
+                System.out.println("Tong cac phan tu chan la:" + tongchan);
+            
+        
         System.out.println("Cac phan tu chia cho 5 du 1 la:");
-        for (i=0;i<1;i++){
-            if (a[i]%5==1){
-                System.out.println(a[i]+"  ");
+     
+        for (i = 0; i < dodai; i++) {
+            if (a[i] % 5 == 1) {
+                System.out.println("Phan tu chia cho 5 du 1 la " + a[i]);
+              
+             
+             
             }
+            
         }
+
     }
-    
 
 }
