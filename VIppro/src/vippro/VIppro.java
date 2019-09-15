@@ -8,8 +8,8 @@ package vippro;
 import java.util.Scanner;
 
 /**
- *
- * @author mylv
+ * * @author mylv
+
  */
 public class VIppro {
 

@@ -26,21 +26,19 @@ public class NewClass {
         int k = 0;
         boolean fl= true;
         for (int i=0;i<n;i++){
-            for (int j=0;j<n-1;j++){
-                if (A[i]<A[j]){
+           
+                if (A[i+1]>=A[i]){
                     fl=false;
-                    k=A[i];
-                   
-                    A[i]=A[j];  
-                    A[j]=k;
+                   break;
                 }
             }
+        
+      
+        if (!fl){ 
+            System.out.println("day la mang tang dan");
+            
         }
-        for (int i=0;i<n;i++){
-        if (!fl){
-            System.out.print(" " + A[i]);
-        }
-        else System.out.print(" "+ A[i]);
-        }
+        else System.out.print("day khong phai mang tang dan");
+        
     }
 }
