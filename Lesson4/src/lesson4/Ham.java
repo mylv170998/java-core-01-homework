@@ -19,27 +19,21 @@ public class Ham {
         int k = sc.nextInt();
         int[] a = new int[k];
         for (int i = 0; i < k; i++) {
-            a[i] = (int) (Math.random() * 100);
+            
+        System.out.println("a["+i+"]=");
+       
+         a[i] =sc.nextInt();
         }
-        System.out.println("  ");
-        int[] mangsx = sapxep(a);
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + "  ");
-        }
+         int tongmang=0;
+         tongmang=tong(a);
+            System.out.println(tongmang);
     }
 
-    static int[] sapxep(int[] a) {
-        int n;
+    static int tong(int[] a) {
+        int tong=0;
         for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a.length; j++) {
-                if (a[i] < a[j]) {
-                    n = a[i];
-                    a[i] = a[j];
-                    a[j] = n;
-
-                }
-            }
+           tong=tong+ a[i];
         }
-        return a;
+        return tong;
     }
 }
