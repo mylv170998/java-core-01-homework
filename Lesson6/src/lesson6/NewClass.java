@@ -34,7 +34,7 @@ public class NewClass {
             }
         
       
-        if (!fl){ 
+        if (fl=false){ 
             System.out.println("day la mang tang dan");
             
         }

@@ -12,23 +12,23 @@ import java.util.Scanner;
  * @author mylv
  */
 public class Bai2 {
-    public static void main(String[] args){
-       Scanner sc= new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Nhap vao so a=");
         int a = sc.nextInt();
         boolean fl = chanle(a);
         System.out.println(fl);
     }
-        static boolean chanle(int a){
-            boolean flag=true;
-            if (a%2==0) {
-                flag=true;
-            }
-            else{
-                flag=false;
-            }
-            return flag;
+
+    static boolean chanle(int a) {
+        boolean flag = true;
+        if (a % 2 == 0) {
+            flag = true;
+        } else {
+            flag = false;
         }
-    
-    
+        return flag;
+    }
+
 }

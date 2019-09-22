@@ -15,24 +15,25 @@ public class Ham {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap do dai k=");
+        System.out.print("Nhap do dai k=");
         int k = sc.nextInt();
         int[] a = new int[k];
         for (int i = 0; i < k; i++) {
-            
-        System.out.println("a["+i+"]=");
-       
-         a[i] =sc.nextInt();
+
+            System.out.print("a[" + i + "]=");
+
+            a[i] = sc.nextInt();
         }
-         int tongmang=0;
-         tongmang=tong(a);
-            System.out.println(tongmang);
+        int tongmang = 0;
+        System.out.print(" tong cac phan tu trong mang la:");
+        tongmang = tong(a);
+        System.out.print(tongmang);
     }
 
     static int tong(int[] a) {
-        int tong=0;
+        int tong = 0;
         for (int i = 0; i < a.length; i++) {
-           tong=tong+ a[i];
+            tong = tong + a[i];
         }
         return tong;
     }
